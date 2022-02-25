@@ -1,4 +1,4 @@
-## Clone this project: type **git clone** inside your directory.
+## Clone this project: type **git clone**. inside your directory.
 
 ## Install packages: type **npm install**.
 
