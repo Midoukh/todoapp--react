@@ -1,0 +1,14 @@
+.button {
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.button h5 {
+  margin: 0;
+}

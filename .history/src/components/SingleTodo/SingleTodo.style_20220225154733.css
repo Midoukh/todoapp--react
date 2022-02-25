@@ -1,0 +1,83 @@
+.single-todo {
+  list-style: none;
+}
+.single-todo--head {
+  display: flex;
+  align-items: center;
+}
+.single-todo--toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem;
+  width: 485px;
+  height: 70px;
+  border-radius: 35px;
+  margin-bottom: 0.9rem;
+  background-color: rgba(204, 204, 204, 0.554);
+}
+.single-todo--toggle:hover {
+  background-color: #ddd;
+}
+.single-todo--toggle h3 {
+  margin: 0;
+}
+.single-todo--toggle span {
+  color: #b2b2b2;
+  font-size: 3em;
+}
+.AccordionContent {
+  background-color: #eee;
+  padding: 1rem;
+  width: 485px;
+  margin-bottom: 1rem;
+  animation-name: anim;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+.Heading {
+  display: flex;
+  align-items: center;
+  opacity: 20%;
+}
+.single-todo--ovel {
+  border: 3px solid #af68e5;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single-todo--ovel img {
+  width: 22px !important;
+  height: 18px !important;
+}
+
+.single-todo--calendar strong {
+  text-transform: capitalize;
+  margin-left: 0.5rem;
+  font-size: 0.7em;
+  opacity: 0.8;
+  display: inline-flex;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

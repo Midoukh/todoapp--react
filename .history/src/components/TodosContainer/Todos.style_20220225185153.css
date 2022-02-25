@@ -1,0 +1,23 @@
+.todos--container {
+  width: 100%;
+  min-height: 85vh;
+  background-color: rgb(245, 255, 252);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todos--list {
+  padding: 0;
+}
+.todos--welcome h1 {
+  font-weight: 400;
+  margin: 2rem 0;
+}
+.todos--welcome h1 > strong {
+  color: #af68e5ea;
+}
+.todos--container input {
+  padding: 0.5rem 0.8rem;
+  outline: none;
+  border-color: rgba(204, 204, 204, 0.602);
+}

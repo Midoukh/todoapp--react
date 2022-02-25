@@ -1,0 +1,16 @@
+.form--container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form--form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 40vh;
+  width: 30vw;
+  border: 1px solid rgba(204, 204, 204, 0.781);
+  box-shadow: 2px 2px 30px #ccc;
+}

@@ -1,0 +1,11 @@
+.profile {
+  height: 7vh;
+  width: 7vh;
+  border-radius: 50%;
+  background-color: rgb(200, 255, 239);
+  border: 1px solid rgba(87, 255, 207, 0.698);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

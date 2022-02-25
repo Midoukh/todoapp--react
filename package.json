@@ -1,0 +1,29 @@
+{
+  "name": "todolist--react",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@okta/okta-auth-js": "^6.1.0",
+    "@okta/okta-react": "^6.4.2",
+    "axios": "^0.26.0",
+    "dayjs": "^1.10.7",
+    "history": "^5.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.2.1",
+    "react-spinners": "^0.11.0",
+    "react-switch": "^6.0.0",
+    "react-toastify": "^8.2.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "vite": "^2.8.0"
+  }
+}

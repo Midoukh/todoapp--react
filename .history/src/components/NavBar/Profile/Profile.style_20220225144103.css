@@ -1,0 +1,12 @@
+.profile {
+  box-sizing: border-box;
+  height: 7vh;
+  width: 7vh;
+  border-radius: 50%;
+  background-color: rgb(210, 255, 242);
+  border: 1px solid rgba(87, 255, 207, 0.301);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
