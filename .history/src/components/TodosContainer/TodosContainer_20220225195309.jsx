@@ -126,7 +126,6 @@ const Container = ({ userName }) => {
         pointer
         clickEvent={handleShowInput}
         justify="space-between"
-        dashed
       >
         <Flex>
           <Button bg="#AF68E5" />

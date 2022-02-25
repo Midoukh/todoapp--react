@@ -18,14 +18,13 @@ const AppWithRouterAccess = () => {
   const oktaAuth = new OktaAuth({
     issuer: "https://dev-22108233.okta.com/oauth2/default",
     clientId: OKTA_CLIENT_ID,
-    redirectUri: window.location.origin + "/login/callback",
+    redirectUri: window.location.origin + "/dashboard",
     onAuthRequired: onAuthRequired,
     pkce: true,
   });
 
   const restoreOriginalUri = async (_oktaAuth, originalUri) => {
-    // history.replace(toRelativeUrl(originalUri, window.location.origin));
-    location.assign("/dashboard");
+    history.replace(toRelativeUrl(originalUri, window.location.origin));
   };
 
   return (

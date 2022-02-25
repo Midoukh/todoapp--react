@@ -36,8 +36,3 @@
 .todos--container input:focus {
   border-color: #af68e5ea;
 }
-@media (max-width: 700px) {
-  .todos--welcome h1 {
-    margin: 3rem;
-  }
-}

@@ -12,7 +12,7 @@ import { OKTA_CLIENT_ID } from "../../utils/constants";
 const AppWithRouterAccess = () => {
   const history = createBrowserHistory();
   const onAuthRequired = () => {
-    history.push("/");
+    history.push("/dashboard");
   };
 
   const oktaAuth = new OktaAuth({
@@ -24,8 +24,7 @@ const AppWithRouterAccess = () => {
   });
 
   const restoreOriginalUri = async (_oktaAuth, originalUri) => {
-    // history.replace(toRelativeUrl(originalUri, window.location.origin));
-    location.assign("/dashboard");
+    history.replace(toRelativeUrl(originalUri, window.location.origin));
   };
 
   return (

@@ -68,7 +68,7 @@ const Container = ({ userName }) => {
 
       console.log(fetchedTodos);
       if (!fetchedTodos.data.data.length) setNoTods(true);
-      else setNoTods(false);
+      else setNewTodo(false);
       setTodos(fetchedTodos.data.data.reverse());
     } catch (err) {
       console.error(error);
@@ -126,7 +126,6 @@ const Container = ({ userName }) => {
         pointer
         clickEvent={handleShowInput}
         justify="space-between"
-        dashed
       >
         <Flex>
           <Button bg="#AF68E5" />

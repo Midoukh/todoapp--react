@@ -24,8 +24,7 @@ const AppWithRouterAccess = () => {
   });
 
   const restoreOriginalUri = async (_oktaAuth, originalUri) => {
-    // history.replace(toRelativeUrl(originalUri, window.location.origin));
-    location.assign("/dashboard");
+    history.replace(toRelativeUrl(originalUri, window.location.origin));
   };
 
   return (
@@ -34,7 +33,7 @@ const AppWithRouterAccess = () => {
         <Route path="/" exact element={<AuthForm />} />
         <Route path="/dashboard" element={<Home />} />
 
-        <Route path="/login" render={() => <SignIn />} />
+        {/* <Route path="/login" render={() => <SignIn />} /> */}
         <Route path="/login/callback" element={<LoginCallback />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

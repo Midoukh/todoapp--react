@@ -41,13 +41,8 @@
 .menu li label strong {
   margin-right: 0.4rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .menu {
     width: 40vw;
-  }
-}
-@media (max-width: 500px) {
-  .menu {
-    width: 70vw;
   }
 }
